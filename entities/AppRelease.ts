@@ -20,9 +20,21 @@ export class AppRelease {
         id: "1",
         app_name: "Paxeer",
         version: "1.0.0",
+        github_release_url: "https://github.com/paxeer/app/releases/download/v1.0.0/paxeer-v1.0.0.apk",
+        release_notes: "Initial release with basic trading functionality.",
+        file_size: "24.5 MB",
+        minimum_android_version: "7.0",
+        is_active: true,
+        download_count: 1250,
+        created_date: "2023-09-01T00:00:00.000Z"
+      },
+      {
+        id: "2",
+        app_name: "Paxeer",
+        version: "1.1.0",
         github_release_url: "https://github.com/syncron-labs/Mobile-app-Paxeer/releases/download/v1.0.0/app-release.apk",
         release_notes: "Added advanced charting and portfolio tracking features.",
-        file_size: "49.8 MB",
+        file_size: "26.8 MB",
         minimum_android_version: "7.0",
         is_active: true,
         download_count: 875,
@@ -55,6 +67,8 @@ export class AppRelease {
           if (aValue < bValue) return 1;
           if (aValue > bValue) return -1;
         } else {
+          if (aValue < bValue) return -1;
+          if (aValue > bValue) return 1;
         }
         return 0;
       });
@@ -76,6 +90,4 @@ export class AppRelease {
       ...data
     } as AppReleaseData;
   }
-
 }
-
