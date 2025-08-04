@@ -55,8 +55,6 @@ export class AppRelease {
           if (aValue < bValue) return 1;
           if (aValue > bValue) return -1;
         } else {
-          if (aValue < bValue) return -1;
-          if (aValue > bValue) return 1;
         }
         return 0;
       });
@@ -80,3 +78,4 @@ export class AppRelease {
   }
 
 }
+
