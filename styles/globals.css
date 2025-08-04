@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --paxeer-blue: #35b7ff;
+  --paxeer-green: #74f05a;
+  --paxeer-black: #000000;
+  --paxeer-white: #ffffff;
+  --glass-bg: rgba(53, 183, 255, 0.1);
+  --glass-border: rgba(53, 183, 255, 0.2);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.paxeer-glow {
+  box-shadow: 0 0 30px rgba(53, 183, 255, 0.3);
+}
+
+.crypto-grid {
+  background-image: 
+    linear-gradient(rgba(53, 183, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(53, 183, 255, 0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+}

@@ -1,0 +1,44 @@
+"name": "AppRelease",
+  "type": "object",
+  "properties": {
+    "app_name": {
+      "type": "string",
+      "description": "Name of the Android app"
+    },
+    "version": {
+      "type": "string",
+      "description": "App version (e.g., 1.2.3)"
+    },
+    "github_release_url": {
+      "type": "string",
+      "description": "Direct link to the APK file in GitHub releases"
+    },
+    "release_notes": {
+      "type": "string",
+      "description": "What's new in this version"
+    },
+    "file_size": {
+      "type": "string",
+      "description": "APK file size (e.g., 25.4 MB)"
+    },
+    "minimum_android_version": {
+      "type": "string",
+      "description": "Minimum Android version required"
+    },
+    "is_active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Whether this release is currently available for download"
+    },
+    "download_count": {
+      "type": "number",
+      "default": 0,
+      "description": "Number of times this version was downloaded"
+    }
+  },
+  "required": [
+    "app_name",
+    "version",
+    "github_release_url"
+  ]
+}
